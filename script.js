@@ -8,8 +8,10 @@ function unlock () {
 
 function closeeye () {
 	document.querySelector('#eye').classList.add('closed')
+	document.querySelector('#eye::before').classList.add('closed')
 }
 
 function openeye () {
 	document.querySelector('#eye').classList.remove('closed')
+	document.querySelector('#eye::before').classList.remove('closed')
 }
